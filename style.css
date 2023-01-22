@@ -227,7 +227,7 @@ nav .fa{
     margin-top: 80px;
     font-size: 35px;
     text-align: center;
-    color: #f00000;
+    color: #000000;
    
 }
 
@@ -272,7 +272,7 @@ nav .fa{
 }
 
 .container .card:hover .face.face1{
-    background: #ff0057;
+    background: #c42c69;
     transform: translateY(0);
 }
 
