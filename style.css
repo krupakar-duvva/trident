@@ -233,24 +233,30 @@ nav .fa{
 
 /*--- dark over card effect about persons --*/
 .about{
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: -30px;
     padding: 0;
-    min-height: 80vh;
+    min-height: 40vh;
     background: rgb(87, 84, 84);
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
+    flex-direction: column;
     align-items: center;
     font-family: consolas;
 }
 
-.container{
-    width: 10000px;
+.container {
+    width: 100%;
     position: relative;
-    display:inline-flex;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-.container .card{
+.container .card {
+    width: calc(33.33% - 30px);
+    margin-bottom: 30px;
     position: relative;
     cursor: pointer;
 }
@@ -338,5 +344,16 @@ nav .fa{
         display:block;
         align-content: center;
         justify-content: space-between;
+    }
+}
+@media (max-width: 900px) {
+    .container .card {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 600px) {
+    .container .card {
+        width: 100%;
     }
 }
